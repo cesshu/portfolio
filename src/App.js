@@ -19,7 +19,7 @@ function App() {
   // Update currentPage whenever the location changes
   useEffect(() => {
     const path = location.pathname; // Get the current path
-    if (path === '/') setCurrentPage('home');
+    if (path === '/portfolio') setCurrentPage('home');
     else if (path === '/about') setCurrentPage('about');
     else if (path === '/works') setCurrentPage('works');
   }, [location]); // Add location as a dependency
