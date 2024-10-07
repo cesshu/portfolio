@@ -15,7 +15,7 @@ const Home = () => {
           <Link to="/works" className="btn btn-outline-light rounded-5 btn-links">gallery</Link>
         </div>
       </div>
-      <img src="images/cess1.jpg" alt="MyPicture" className="image col" />
+      <img src={`${process.env.PUBLIC_URL}/images/cess1.jpg`} alt="MyPicture" className="image col" />
     </div>
   );
 };
