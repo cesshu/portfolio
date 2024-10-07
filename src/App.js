@@ -48,7 +48,7 @@ function App() {
       {/* Fullscreen Menu */}
       {menuOpen && (
         <div className="fullscreen-menu">
-          <NavLink to="/" className="menu-link" onClick={toggleMenu}>
+          <NavLink to="/portfolio" className="menu-link" onClick={toggleMenu}>
             Home
           </NavLink>
           <NavLink to="/about" className="menu-link" onClick={toggleMenu}>
@@ -63,7 +63,7 @@ function App() {
       {/* Main Content */}
       <div className="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/works" element={<Works />} />
         </Routes>
