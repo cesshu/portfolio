@@ -13,7 +13,7 @@ function App() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    document.body.classList.toggle('dimmed', !menuOpen); // Apply dimming effect
+    document.body.classList.toggle('dimmed', !menuOpen);
   };
 
   // Update currentPage whenever the location changes

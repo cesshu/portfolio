@@ -93,7 +93,7 @@ function About() {
           <p className="text-white text-sm">Please feel free to contact me for your inquiries</p>
 
           <div>
-            <button type="submit" className="btn-submit btn btn-outline-light rounded-5 btn-links">submit</button>
+            <button className="btn-submit btn btn-outline-light rounded-5 btn-links">submit</button>
           </div>
         </form>
 

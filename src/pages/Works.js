@@ -50,7 +50,6 @@ const projects = [
   },
 ];
 
-
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,7 +59,7 @@ const Works = () => {
     activeFilter === 'all' || project.category === activeFilter
   );
 
-  const handlePreviewClick = (project) => {
+  const openModal = (project) => {
     setSelectedProject(project);
     setIsModalOpen(true);
   };
@@ -87,10 +86,9 @@ const Works = () => {
       </div>
       <div className="works-grid text-white">
         {filteredProjects.map((project) => (
-          <div key={project.id} className="works-card"  onClick={() => handlePreviewClick(project)}>
+          <div key={project.id} className="works-card" onClick={() => openModal(project)}>
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="overlay d-flex flex-column">
-              <h2 className="preview-title">{project.title}</h2>
               <p className="preview-btn">see preview</p>
             </div>
           </div>
